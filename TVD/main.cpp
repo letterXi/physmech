@@ -6,8 +6,9 @@
 
 int main()
 {
+	// доработать обработку схемы. Должно быть c <= 1. c=1 - точное решение
 	size_t t_points = 1000;
-	double c = 0.66;
+	double c = 0.1;
 	double tau = 1.0 / static_cast<double>(t_points);
 	size_t n_points = static_cast<size_t>(std::ceil(c * static_cast<double>(t_points)));
 	double h = 1.0 / static_cast<double>(n_points - 1);

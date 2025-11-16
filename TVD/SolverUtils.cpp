@@ -29,7 +29,7 @@ double initial_condition(double x)
 double minmodLimiter(double r)
 {
 	if (std::isinf(r) || std::isnan(r))
-		return 0.0;
+		return 1e-12;
 	return std::max(0.0, std::min(1.0, r));
 }
 
